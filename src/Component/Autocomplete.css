@@ -1,0 +1,85 @@
+.auto-complete {
+  display: flex;
+  border: rgb(96, 96, 109) 2px solid;
+  width: fit-content;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  transition: 0.15s ease;
+  position: relative;
+  margin: 1rem 0;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.auto-complete:focus-within {
+  background-color: rgb(242, 241, 244);
+  transition: 0.3s ease;
+}
+
+.auto-complete input, .auto-complete input:focus-within {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.auto-complete input {
+  padding: 0.5rem;
+  background-color: transparent;
+  min-width: 50px;
+  width: fit-content;
+  max-width: 100%;
+  flex-shrink: 1;
+}
+
+button.icon {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  height: auto;
+  padding: 0 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button.icon:hover {
+  color: blue;
+  transition: 0.3s ease;
+}
+
+.autobox {
+  position: absolute;
+  background-color: white;
+  border: rgb(96, 96, 109) 1px solid;
+  top:  100%;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  overflow-y: scroll;
+  max-height: 200px;
+}
+
+.auto-item {
+  cursor: pointer;
+}
+
+.auto-item:hover {
+  background-color: rgb(242, 241, 244);
+  transition: 0.3s ease;
+}
+
+.selected-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-left: 1rem;
+}
+
+.selected-item {
+  background-color: #e0e0e0;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+}
