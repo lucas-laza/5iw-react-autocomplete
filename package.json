@@ -1,5 +1,5 @@
 {
-  "name": "auto-complete",
+  "name": "nomunique-ll-abdl-auto-complete",
   "main": "dist/auto-complete.cjs",
   "module" : "dist/auto-complete.js",
   "private": true,
